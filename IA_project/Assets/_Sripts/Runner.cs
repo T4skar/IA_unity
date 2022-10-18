@@ -1,34 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using PathCreation;
 using UnityEngine.AI;
-
+using UnityEngine;
 public class Runner : MonoBehaviour
 {
-    public NavMeshAgent agent;
-    public GameObject target;
-    public GameObject[] waypoints;
-    int patrolWP = 0;
+    private NavMeshAgent _agent;
+    public GameObject Seeker;
+    public PathCreator pathCreator;
+    public float speed = 5;
+    public float EnemyDistanceRun = 4.6f;
 
-    // Start is called before the first frame update
+    float distanceTravelled;
+    public EndOfPathInstruction endOfPathInstruction;
+
+
     void Start()
     {
-        
+        _agent = GetComponent<NavMeshAgent>();
+        if (pathCreator != null)
+        {
+            distanceTravelled = pathCreator.path.GetClosestDistanceAlongPath(transform.position);
+            _agent.destination = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
+        };
     }
 
-   
-    // Update is called once per frame
     void Update()
     {
-        if (!agent.pathPending && agent.remainingDistance < 0.5f) Patrol();
-    }
-    void Patrol()
-    {
-        patrolWP = (patrolWP + 1) % waypoints.Length;
-        Seek(waypoints[patrolWP].transform.position);
-    }
-    void Seek(Vector3 position)
-    {
-        agent.destination = target.transform.position;
+        float distance = Vector3.Distance(transform.position, Seeker.transform.position);
+        if (distance < EnemyDistanceRun)
+        {
+
+            Vector3 DirToSeeker = transform.position - Seeker.transform.position;
+            Vector3 newPos = transform.position + DirToSeeker;
+            _agent.SetDestination(newPos);
+        }
+        else if (distance > EnemyDistanceRun)
+        {
+            if (_agent.remainingDistance > 0.2f)
+            {
+                distanceTravelled = pathCreator.path.GetClosestDistanceAlongPath(transform.position);
+                _agent.destination = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
+            }
+            else
+            {
+                distanceTravelled += speed * Time.deltaTime;
+                transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled);
+                transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled);
+                if (pathCreator != null)
+                {
+                    distanceTravelled += speed * Time.deltaTime;
+                    transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
+                    transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction);
+                }
+            }
+        }
     }
 }
