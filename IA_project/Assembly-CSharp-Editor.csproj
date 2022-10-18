@@ -56,69 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcCursorDrawer.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcSplitterPolylineEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcTrsEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGCurveReferenceToPointEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Utils\BGTreeView.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcCursorObjectTranslateEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\CcInfra\BGCcChoseDrawer.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcCursorEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Settings\BGAbstractSettingsForEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Overlay\BGOverlayMessage.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGCurveEditorPointsSelection.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Infra\BGHandlesSettingsDrawer.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Infra\BGChoseComponentWindow.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGCurvePointComponentDrawer.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Overlay\BGSceneViewOverlay.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGNewPointPositionManager.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Utils\BGTransition.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Settings\BGCurveSettingsForEditorWindow.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Utils\BGStartUp.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Utils\BGTableView.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Overlay\BGSceneViewOverlayPointInsert.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Settings\BGCurveSettingsSO.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Infra\BGCurveChosePointWindow.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\CcInfra\BGCcChangeNameWindow.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Overlay\BGSceneViewOverlayMenu.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGCurveEditorPoints.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Overlay\BGSceneViewOverlayPointAdd.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Utils\BGPrivateField.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGCurveEditorPoint.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Overlay\BGSceneViewOverlayPointAddAtDistance.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Overlay\BGSceneViewOverlayMenuPoint.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Utils\BGEditorUtility.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcTriangulate2DEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGCurvePointGOEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Overlay\BGSceneViewOverlayPointAddSnap3D.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Utils\BGEditorIcon.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\CcInfra\BGCcTreeView.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\CcInfra\BGCcChoseWindow.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Infra\BGPropertyDrawer.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Overlay\BGSceneViewOverlayMenuSelection.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Utils\BGBinaryResources.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Settings\BGCurveSettingsOperations.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGCurveEditorSettings.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\CcInfra\BGCcEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGCurveEditorFields.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGCurveEditorTab.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGCurveEditorComponents.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Overlay\BGSceneViewOverlayPointAddSnap2D.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcCursorChangeLinearEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGCurveEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcVisualizationLineRendererEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcCursorObjectScaleEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Settings\BGCurveSettingsForEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Infra\BGTransformMonitor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Overlay\BGPopupMenu.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Infra\BGCurvePainterHandles.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Infra\BGCurvePainterGizmo.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Curve\BGRectangularSelection.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcMathEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcCursorObjectEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcSweep2DEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\Cc\BGCcCursorObjectRotateEditor.cs" />
-    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Editor\CcInfra\BGCcAddWindow.cs" />
+    <Compile Include="Assets\PathCreator\Examples\Scripts\Editor\PathSceneToolEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -873,6 +811,14 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{FCF64E75-DEBA-0305-7F6B-8868CAD3AFF1}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="PathCreator.csproj">
+      <Project>{3E84B8C4-9181-AB48-E216-D2E5A50B4636}</Project>
+      <Name>PathCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="PathCreatorEditor.csproj">
+      <Project>{C49E2AE7-4850-49EA-46F8-233DDF037DAC}</Project>
+      <Name>PathCreatorEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
