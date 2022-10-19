@@ -365,6 +365,7 @@
 "Assets/Prefabs/Mini First Person Controller/Scripts/FirstPersonLook.cs"
 "Assets/Prefabs/Mini First Person Controller/Scripts/FirstPersonMovement.cs"
 "Assets/_Sripts/AIVision.cs"
+"Assets/_Sripts/Centralita_de_mando.cs"
 "Assets/_Sripts/Flock.cs"
 "Assets/_Sripts/FlockManager.cs"
 "Assets/_Sripts/Hive.cs"

@@ -30,13 +30,17 @@ public class AIVision : MonoBehaviour
 				ray.origin = ray.GetPoint(frustum.nearClipPlane);
 
 				if (Physics.Raycast(ray, out hit, frustum.farClipPlane, mask))
-				{ }
-					if (hit.collider.gameObject.CompareTag("Enemy"))
-                    {
-						Vector3 DirToSeeker = transform.position - Runner.transform.position;
-						Vector3 newPos = transform.position - DirToSeeker;
-						_agent.SetDestination(newPos);
-					}
+				{
+					Vector3 DirToSeeker = transform.position - Runner.transform.position;
+					Vector3 newPos = transform.position - DirToSeeker;
+					_agent.SetDestination(newPos);
+				}
+					//if (hit.collider.gameObject.CompareTag("Enemy"))
+     //               {
+					//	Vector3 DirToSeeker = transform.position - Runner.transform.position;
+					//	Vector3 newPos = transform.position - DirToSeeker;
+					//	_agent.SetDestination(newPos);
+					//}
 
 				
 					

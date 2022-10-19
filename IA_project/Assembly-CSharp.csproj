@@ -61,6 +61,7 @@
     <Compile Include="Assets\Prefabs\Mini First Person Controller\Scripts\Components\Zoom.cs" />
     <Compile Include="Assets\Prefabs\Mini First Person Controller\Scripts\Components\FirstPersonAudio.cs" />
     <Compile Include="Assets\Prefabs\Mini First Person Controller\Scripts\FirstPersonLook.cs" />
+    <Compile Include="Assets\_Sripts\AIVision.cs" />
     <Compile Include="Assets\_Sripts\Hive.cs" />
     <Compile Include="Assets\PathCreator\Examples\Scripts\GeneratePathExample.cs" />
     <Compile Include="Assets\_Sripts\FlockManager.cs" />
@@ -74,7 +75,7 @@
     <Compile Include="Assets\Prefabs\Mini First Person Controller\Scripts\Components\Crouch.cs" />
     <Compile Include="Assets\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
     <Compile Include="Assets\Prefabs\Mini First Person Controller\Scripts\Components\GroundCheck.cs" />
-    <Compile Include="Assets\_Sripts\AIVision.cs" />
+    <Compile Include="Assets\_Sripts\Centralita_de_mando.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Prefabs\SimpleLowPolyNature\Readme.txt" />
