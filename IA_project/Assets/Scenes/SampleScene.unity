@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 441163112}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Cop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,7 +253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441163111}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.34, y: 1.47, z: -14.64}
+  m_LocalPosition: {x: -7.8, y: 1.47, z: -17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -302,16 +302,16 @@ MonoBehaviour:
     intParams: 
     intParamsNames: []
     intParamsLostDefaultValue: 
-    boolParams: 00
+    boolParams: 01
     boolParamsNames:
     - steeal
     boolParamsLostDefaultValue: 
     floatParams:
-    - 2.56
     - 10
+    - 57.6
     floatParamsNames:
-    - closeDistance
     - detectionArea
+    - tresureDistance
     floatParamsLostDefaultValue: 
     stringParams: []
     stringParamsNames: []
@@ -321,12 +321,10 @@ MonoBehaviour:
     colorParamsLostDefaultValue: 
     objectParams:
     - {fileID: 1645740957}
-    - {fileID: 0}
     - {fileID: 441163111}
     - {fileID: 1195842676}
     objectParamsNames:
     - tesoro
-    - anciano
     - polisia
     - wanderArea
     objectParamsLostDefaultValue: 
@@ -1060,7 +1058,7 @@ GameObject:
   - component: {fileID: 1645740958}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Treasure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1136,7 +1134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645740957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.31, y: 1.49, z: -9.42}
+  m_LocalPosition: {x: -26.31, y: 0.5, z: -9.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
