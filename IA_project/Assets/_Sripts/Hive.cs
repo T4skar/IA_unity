@@ -5,9 +5,9 @@ using UnityEngine;
 public class Hive : MonoBehaviour
 {
     public GameObject flocking;
-    static int numFish = 10;
+    static int numBee = 10;
     public int tankSize = 5;
-    public GameObject[] allFish = new GameObject[numFish];
+    public GameObject[] allBees = new GameObject[numBee];
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +22,12 @@ public class Hive : MonoBehaviour
     void CreateObgect()
     {
 
-        for (int i = 0; i < numFish; i++)
+        for (int i = 0; i < numBee; i++)
         {
             Vector3 pos = new Vector3(Random.Range(-tankSize, tankSize),
             Random.Range(-tankSize, tankSize),
             Random.Range(-tankSize, tankSize));
-            allFish[i] = (GameObject)Instantiate(flocking, pos, Quaternion.identity);
+            allBees[i] = (GameObject)Instantiate(flocking, pos, Quaternion.identity);
         }
     }
 }
